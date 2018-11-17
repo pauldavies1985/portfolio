@@ -1,0 +1,166 @@
+
+/* Intial Setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Layout Components */
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* Heading */
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 300%;
+    word-spacing: 4px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background: #555;
+    content: " ";
+    width: 100px;
+    margin: 0 left;
+    margin-top: 15px;
+}
+
+
+/* Header */
+
+header {
+    background-position: center;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/hero1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero {
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container .hero-text-box h1 {
+    font-size: 160px;
+    font-weight: 100;
+    line-height: 80px;
+}
+
+/* Main Navigation */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
