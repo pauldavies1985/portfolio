@@ -25,6 +25,10 @@ body {
   visibility: hidden; }
 
 /* Layout Components */
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
 section {
   padding: 80px 0; }
 
@@ -42,7 +46,8 @@ h4 {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  padding: 25px;
   color: #fff;
   font-size: 300%;
   word-spacing: 4px;
@@ -57,7 +62,7 @@ h2 {
   letter-spacing: 1px; }
 
 h3 {
-  font-size: 110%;
+  font-size: 170%;
   margin-bottom: 15px; }
 
 h4 {
@@ -75,6 +80,26 @@ h2::after {
   width: 100px;
   margin: 0 left;
   margin-top: 15px; }
+
+.bold {
+  font-weight: 700; }
+
+.no-pad {
+  padding: 0;
+  margin: 0; }
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%; }
+
+/* Icons */
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px; }
 
 /* Header */
 header {
@@ -138,3 +163,33 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #fff; }
+
+/* About */
+.classic {
+  font-family: "Great Vibes", sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin: 0 0 15px;
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg); }
+
+.about-img {
+  height: 100%;
+  margin-right: 10px;
+  vertical-align: middle; }
+
+/* Services */
+.section-services {
+  background-color: #f4f4f4; }
+
+.section-services h4 {
+  font-size: 80%;
+  color: #000; }
+
+.section-services p {
+  text-align: center;
+  font-size: 70%; }
+
+/* Portfolio */
